@@ -1,9 +1,9 @@
 // src/components/Login.js
 import React, { useContext, useState } from 'react';
-import { UserContext } from '../context/UserContext';
+ 
 
 const Login = () => {
-  const { login } = useContext(UserContext);
+   
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 

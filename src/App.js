@@ -6,7 +6,6 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom';
-import { UserProvider } from './context/UserContext';
 import Header from './components/Header';
 import Home from './components/Home';
 import A from './components/A';
@@ -15,7 +14,7 @@ import withAuth from './hoc/withAuth';
 
 const App = () => {
   return (
-    <UserProvider>
+   
       <Router>
         <Header />
         <Routes>
@@ -25,7 +24,7 @@ const App = () => {
           <Route path="/a" element={withAuth(A)} />
         </Routes>
       </Router>
-    </UserProvider>
+     
   );
 };
 
